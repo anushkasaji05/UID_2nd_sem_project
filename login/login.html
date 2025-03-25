@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../globals.css">
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js"></script>
+</head>
+
+<body>
+    <div class="container container-flex">
+        <div class="login-container">
+            <div class="app-name">RaveTune</div>
+            <form id="loginForm">
+                <div class="form-group" id="emailFG">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="email" id="email">
+                    <span id="emailError" class="form-error">Email is mandatory</span>
+                </div>
+                <div class="form-group" id="passwordFG">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                    <span id="passwordError" class="form-error">Password is mandatory</span>
+                </div>
+                <div class="button-container">
+                    <button type="button" id="login" class="primary-button" onclick="onLogin()">Login</button>
+                </div>
+            </form>
+            <div class="footer"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaveTune - Electronic Music Hub</title>
+    <link rel="stylesheet" href="../globals.css">
+    <link rel="stylesheet" href="homescreen.css">
+    <script type="text/javascript" src="./homepage.js"></script>
+</head>
+<body>
+    <div class="container homescreen-container">
+        <nav class="navigation-bar">
+            <div class="logo">
+                <h1>RT</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li onclick="onNavClick('home')"><a href="#">
+                        <img src="../assets/home.svg">
+                    </a></li>
+                    <li onclick="onNavClick('favourite')"><a href="#">
+                        <img src="../assets/like.svg">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../assets/history.svg">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../assets/playlist.svg">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../assets/notes.svg">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../assets/info.svg">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../assets/user.svg">
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <main class="home-content">
+            <iframe id="iframe" src="./home/home.html"></iframe>
+        </main>
+        
+        <script>
+            // Additional JavaScript functionality can be added here
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('RaveTune loaded successfully!');
+            });
+        </script>
+    </div>
+</body>
+</html>
